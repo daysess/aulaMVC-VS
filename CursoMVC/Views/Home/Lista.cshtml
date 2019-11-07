@@ -1,0 +1,23 @@
+﻿@model CursoMVC.Models.Pessoa
+
+@{
+    ViewBag.Title = "Lista";
+}
+
+<h2>Lista</h2>
+
+<div><b>PessoaId</b></div>
+<div>
+    @Model.PessoaId;
+</div>
+
+<div><b>Nome</b></div>
+<div>
+    @Model.Nome;
+</div>
+
+<div><b>Tipo</b></div>
+<div>
+    @Model.Tipo;
+</div>
+@Html.ActionLink("Voltar", "Index", "Home");

@@ -1,0 +1,61 @@
+﻿@model CursoMVC.Models.Usuario
+@{
+    ViewBag.Title = "Resultado";
+}
+
+<h2>Resultado</h2>
+
+<fildset>
+    <legend>Dados do usuário</legend>
+
+    <div class="editor-label">
+        <b>
+            @Html.DisplayNameFor(x => x.Nome)
+        </b>
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(x => x.Nome)
+    </div>
+
+    <div class="editor-label">
+        <b>
+            @Html.DisplayNameFor(x => x.Observacoes)
+        </b>
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(x => x.Observacoes)
+    </div>
+
+    <div class="editor-label">
+        @Html.DisplayNameFor(x => x.Idade)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(x => x.Idade)
+    </div>
+
+    <div class="editor-label">
+        @Html.DisplayNameFor(x => x.Login)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(x => x.Login)
+    </div>
+
+    <div class="editor-label">
+        @Html.DisplayNameFor(x => x.Senha)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(x => x.Senha)
+    </div>
+
+    <div class="editor-label">
+        @Html.DisplayNameFor(x => x.ConfirmarSenha)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(x => x.ConfirmarSenha)
+    </div>
+
+    <p>@Html.ActionLink("Voltar", "Usuario")</p>
+
+
+</fildset>
+
